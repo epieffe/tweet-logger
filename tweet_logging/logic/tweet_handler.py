@@ -64,7 +64,7 @@ class TweetHandler:
         log it to self._log_file_path.
         """
         error_msg = "ERROR %s occurred during connection" %(errno)
-        _log_error(msg)
+        self._log_error(msg)
     
     
     ############################
