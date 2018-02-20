@@ -117,10 +117,10 @@ class TweetHandler:
         try:
             # write error on log_file
             log_file = open(self._log_file_path, "a")
-            print(msg, end="\n", file=log_file_path)
+            print(msg, end="\n", file=log_file)
             if traceback:
                 stacktrace_str = format_exc()
-                print(stacktrace_str, end="\n", file=self._log_file_path)
+                print(stacktrace_str, end="\n", file=log_file)
             log_file.close()
         except Exception:
             error_msg = "WARNING: can not write error on log_file"
