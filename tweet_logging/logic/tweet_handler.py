@@ -52,7 +52,7 @@ class TweetHandler:
         except Exception as exc:
             # on error: write error into log_file and stderr
             error_msg = "ERROR occurred on Tweet id: %d" %(id)
-            _log_error(error_msg, exc)
+            self._log_error(error_msg, exc)
             if self._stop_on_error:
                 raise exc
     
