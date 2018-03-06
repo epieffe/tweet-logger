@@ -1,3 +1,7 @@
+# Please Note:
+This program had been running for two weeks from 02/18/2018 untill 05/04/2018 on a raspberry pi 3 logging tweets regarding Italian political elections. Detailed results will be published soon.
+We experimented some random crashes with the tweepy API and we suspect it is excessively memory consuming. We lost some tweets due to this crashes, but we had been offline for less than 36 hours overall (also for some hardware related problems). We would like to reimplement the tweet_logger module using a different twitter API, but the developer is into other stuff right now :)
+
 
 # What this program does
 this is a python daemon that logs tweets corresponding to certain keywords in real time using Twitter Streaming API. You can set your keywords in the config.py file.
